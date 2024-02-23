@@ -1,0 +1,23 @@
+lista = []
+nome = input('Digite o nome ')
+nota = float(input('Digite a nota '))
+
+lista.append({'nome': nome, 'nota': nota})
+
+nome = input('Digite o nome ')
+nota = float(input('Digite a nota '))
+
+lista.append({'nome': nome, 'nota': nota})
+
+for c in lista:
+    print(f'Aluno '+c['nome'] + 'Aluno: '+c['nota'])
+
+def adiciona(nome,nota):
+    lista.append({'nome': nome, 'nota': nota})
+
+def visualiza():
+    if ( lista== 0 ):
+        print('Lista vazia')
+    else:
+        print(lista)
+
